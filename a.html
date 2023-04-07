@@ -1,0 +1,32 @@
+<html>
+
+<head>
+  <title>Color Picker</title>
+</head>
+
+<body>
+  <label for="color-picker">Elige un color:</label>
+  <input type="color" id="color-picker">
+
+  <script>
+    // Obtener el elemento del color picker
+    var colorPicker = document.getElementById("color-picker")
+
+    // Agregar un listener para cuando cambie el color seleccionado
+    colorPicker.addEventListener("input", function () {
+      // Obtener el color seleccionado
+      var color = colorPicker.value
+      // Mostrar el color en la consola
+      console.log("Color seleccionado: " + color)
+    });
+  </script>
+</body>
+
+</html>
+En este ejemplo, el elemento input de tipo color se muestra con una etiqueta label para que el usuario sepa qué es.
+Luego, se obtiene el elemento del color picker en JavaScript y se agrega un listener para el evento input, que se activa
+cuando el usuario selecciona un color. En el listener, se obtiene el valor del color seleccionado y se muestra en la
+consola del navegador.
+
+Puedes personalizar y estilizar el color picker utilizando CSS. Además, puedes usar JavaScript para hacer más cosas con
+el color seleccionado, como cambiar el color de fondo de un elemento en la página.
